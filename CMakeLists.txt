@@ -5,4 +5,6 @@ add_library(ImGui STATIC
         imgui_demo.cpp misc/cpp/imgui_stdlib.h misc/cpp/imgui_stdlib.cpp
 )
 
+target_link_libraries(ImGui PRIVATE glm)
+target_link_libraries(ImGui PRIVATE stb)
 target_include_directories(ImGui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
